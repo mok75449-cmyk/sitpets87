@@ -56,36 +56,36 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Image Grid */}
-          <div className="relative hidden lg:block">
-            <div className="grid grid-cols-2 gap-4">
+          {/* Image Grid - Visible on all screens */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-3 md:gap-4">
               {/* Main large image */}
-              <div className="col-span-2 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="col-span-2 rounded-xl md:rounded-2xl overflow-hidden shadow-xl md:shadow-2xl">
                 <img 
                   src={petSitter2} 
                   alt="Happy pet sitter with dogs" 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-40 md:h-64 object-cover"
                 />
               </div>
               {/* Two smaller images */}
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+              <div className="rounded-xl md:rounded-2xl overflow-hidden shadow-lg md:shadow-xl">
                 <img 
                   src={petSitter1} 
                   alt="Pet sitter relaxing with dogs on couch" 
-                  className="w-full h-48 object-cover"
+                  className="w-full h-28 md:h-48 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+              <div className="rounded-xl md:rounded-2xl overflow-hidden shadow-lg md:shadow-xl">
                 <img 
                   src={petSitter3} 
                   alt="Pet sitter caring for dog at home" 
-                  className="w-full h-48 object-cover"
+                  className="w-full h-28 md:h-48 object-cover"
                 />
               </div>
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/20 rounded-full blur-2xl"></div>
+            <div className="absolute -top-4 -right-4 w-16 md:w-24 h-16 md:h-24 bg-primary/20 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-20 md:w-32 h-20 md:h-32 bg-accent/20 rounded-full blur-2xl"></div>
           </div>
         </div>
       </div>
